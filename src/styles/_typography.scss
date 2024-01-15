@@ -1,0 +1,123 @@
+// Headings
+@property --heading-huge-font-size {
+  syntax: '<length>';
+  inherits: true;
+  initial-value: 58px;
+}
+@property --heading-huge-line-height {
+  syntax: '<length>';
+  inherits: true;
+  initial-value: 72px;
+}
+@property --heading-extra-large-font-size {
+  syntax: '<length>';
+  inherits: true;
+  initial-value: 45px;
+}
+@property --heading-extra-large-line-height {
+  syntax: '<length>';
+  inherits: true;
+  initial-value: 56px;
+}
+@property --heading-large-font-size {
+  syntax: '<length>';
+  inherits: true;
+  initial-value: 31px;
+}
+@property --heading-large-line-height {
+  syntax: '<length>';
+  inherits: true;
+  initial-value: 40px;
+}
+@property --heading-medium-font-size {
+  syntax: '<length>';
+  inherits: true;
+  initial-value: 27px;
+}
+@property --heading-medium-line-height {
+  syntax: '<length>';
+  inherits: true;
+  initial-value: 36px;
+}
+@property --heading-small-font-size {
+  syntax: '<length>';
+  inherits: true;
+  initial-value: 19px;
+}
+@property --heading-small-line-height {
+  syntax: '<length>';
+  inherits: true;
+  initial-value: 24px;
+}
+@property --heading-tiny-font-size {
+  syntax: '<length>';
+  inherits: true;
+  initial-value: 15px;
+}
+@property --heading-tiny-line-height {
+  syntax: '<length>';
+  inherits: true;
+  initial-value: 20px;
+}
+
+// Paragraphs and running text
+@property --text-huge-font-size {
+  syntax: '<length>';
+  inherits: true;
+  initial-value: 28px;
+}
+@property --text-huge-line-height {
+  syntax: '<length>';
+  inherits: true;
+  initial-value: 40px;
+}
+@property --text-extra-large-font-size {
+  syntax: '<length>';
+  inherits: true;
+  initial-value: 22px;
+}
+@property --text-extra-large-line-height {
+  syntax: '<length>';
+  inherits: true;
+  initial-value: 32px;
+}
+@property --text-large-font-size {
+  syntax: '<length>';
+  inherits: true;
+  initial-value: 18px;
+}
+@property --text-large-line-height {
+  syntax: '<length>';
+  inherits: true;
+  initial-value: 24px;
+}
+@property --text-base-font-size {
+  syntax: '<length>';
+  inherits: true;
+  initial-value: 16px;
+}
+@property --text-base-line-height {
+  syntax: '<length>';
+  inherits: true;
+  initial-value: 24px;
+}
+@property --text-small-font-size {
+  syntax: '<length>';
+  inherits: true;
+  initial-value: 14px;
+}
+@property --text-small-line-height {
+  syntax: '<length>';
+  inherits: true;
+  initial-value: 20px;
+}
+@property --text-tiny-font-size {
+  syntax: '<length>';
+  inherits: true;
+  initial-value: 12px;
+}
+@property --heading-tiny-line-height {
+  syntax: '<length>';
+  inherits: true;
+  initial-value: 16px;
+}

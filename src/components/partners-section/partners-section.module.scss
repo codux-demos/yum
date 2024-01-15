@@ -1,0 +1,10 @@
+.root {
+    display: flex;
+}
+
+.content {
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 8px;
+}

@@ -1,0 +1,40 @@
+.root {
+    min-height: 640px;
+    background: right center / cover url('https://static.wixstatic.com/media/f09b13_5372211550174dd4a9b85ebf72698027~mv2.jpg');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-emphasized);
+}
+
+.content {
+    max-width: 1200px;
+    padding-right: 32px;
+    padding-left: 32px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    width: 100%;
+}
+
+.leftSideContainer {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+}
+
+.actions {
+    display: flex;
+    column-gap: 16px;
+}
+
+.heading {
+    font-size: var(--heading-huge-font-size);
+    line-height: var(--heading-huge-line-height);
+}
+
+.locationSection {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}

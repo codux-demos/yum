@@ -1,0 +1,80 @@
+.root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000000;
+    color: var(--text-default-inverse);
+    font-size: var(--text-small-font-size);
+    line-height: var(--text-small-line-height);
+}
+
+.content {
+    max-width: 1200px;
+    width: 100%;
+    padding-right: 32px;
+    padding-left: 32px;
+}
+
+.navContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 32px;
+}
+
+.list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.topContainer {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.bottomContainer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.actionsContainer {
+    display: flex;
+    column-gap: 24px;
+}
+
+.bottomLinksContainer {
+    display: flex;
+    column-gap: 24px;
+}
+
+.navColumnTitle {
+    padding-bottom: 8px;
+    margin-top: 16px;
+}
+
+.navItem {
+    display: inline-block;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.logo {
+    max-width: 80px;
+    margin-bottom: 24px;
+}
+
+.storeLink {
+    display: flex;
+    max-width: 160px;
+    margin-bottom: 16px;
+}
+
+.googlePlayButton {
+    width: 100%;
+}
+
+.appleStoreButton {
+    width: 100%;
+}

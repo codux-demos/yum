@@ -1,0 +1,9 @@
+.root {
+  all: unset;
+  color: 'currentColor';
+  cursor: pointer;
+}
+
+.root:hover {
+  text-decoration: underline;
+}

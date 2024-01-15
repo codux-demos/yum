@@ -1,0 +1,58 @@
+// Text
+@property --text-emphasized {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #332824;
+}
+@property --text-default {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: rgba(51, 40, 36, 0.75);
+}
+@property --text-muted {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: rgba(51, 40, 36, 0.5);
+}
+@property --text-emphasized-inverse {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #ffffff;
+}
+@property --text-default-inverse {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: rgba(255, 255, 255, 0.75);
+}
+@property --text-muted-inverse {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: rgba(255, 255, 255, 0.5);
+}
+
+//Background
+@property --background-white {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #ffffff;
+}
+@property --background-light-grey {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #f5f4f4;
+}
+@property --background-black {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #332824;
+}
+@property --background-accent {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #f0c35f;
+}
+@property --background-accent-light {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #fcf2db;
+}

@@ -1,0 +1,31 @@
+.root {
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 32px;
+    width: 100%;
+    max-width: 1200px;
+    padding: 8px 32px;
+    align-items: center;
+}
+
+.leftContainer {
+    display: flex;
+    column-gap: 16px;
+    align-items: center;
+}
+
+.rightContainer {
+    display: flex;
+    justify-content: end;
+}
+
+.search {}
+
+.logo {
+    color: var(--text-emphasized);
+}

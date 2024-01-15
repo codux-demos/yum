@@ -1,0 +1,26 @@
+.root {
+  all: unset;
+  padding-top: 8px;
+  padding-right: 20px;
+  padding-bottom: 8px;
+  padding-left: 20px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.primary {
+  color: var(--text-emphasized-inverse);
+  background-color: var(--background-black);
+
+  &:hover {
+    opacity: 85%;
+  }
+}
+
+.secondary {
+  color: var(--text-emphasized);
+
+  &:hover {
+    background-color: var(--background-accent-light);
+  }
+}

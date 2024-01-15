@@ -1,0 +1,19 @@
+.root {
+    display: grid;
+    grid-template-rows: 4fr min-content 1fr;
+    text-align: center;
+}
+
+.image {
+    width: 100%;
+}
+
+.title {
+    margin-top: 32px;
+    margin-bottom: 16px;
+}
+
+.link {
+    margin-bottom: 32px;
+    align-self: end;
+}

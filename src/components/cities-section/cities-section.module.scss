@@ -1,0 +1,33 @@
+.root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: stretch;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    font-size: var(--heading-extra-large-font-size);
+    line-height: var(--heading-extra-large-line-height);
+}
+
+.list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    column-count: 4;
+    column-gap: 20px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    padding: 80px 32px;
+    width: 100%;
+    row-gap: 48px;
+}

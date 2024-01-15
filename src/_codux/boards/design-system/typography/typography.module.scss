@@ -1,0 +1,67 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  max-width: 652px;
+  padding: 48px;
+  row-gap: 32px;
+}
+
+.headingHuge {
+  font-size: var(--heading-huge-font-size);
+  line-height: var(--heading-huge-line-height);
+}
+
+.headingExtraLarge {
+  font-size: var(--heading-extra-large-font-size);
+  line-height: var(--heading-extra-large-line-height);
+}
+
+.headingLarge {
+  font-size: var(--heading-large-font-size);
+  line-height: var(--heading-large-line-height);
+}
+
+.headingMedium {
+  font-size: var(--heading-medium-font-size);
+  line-height: var(--heading-medium-line-height);
+}
+
+.headingSmall {
+  font-size: var(--heading-small-font-size);
+  line-height: var(--heading-small-line-height);
+}
+
+.headingTiny {
+  font-size: var(--heading-tiny-font-size);
+  line-height: var(--heading-tiny-line-height);
+}
+
+.paragraphHuge {
+  font-size: var(--text-huge-font-size);
+  line-height: var(--text-huge-line-height);
+}
+
+.paragraphExtraLarge {
+  font-size: var(--text-extra-large-font-size);
+  line-height: var(--text-extra-large-line-height);
+}
+
+.paragraphLarge {
+  font-size: var(--text-large-font-size);
+  line-height: var(--text-large-line-height);
+}
+
+.paragraphBase {
+  font-size: var(--text-base-font-size);
+  line-height: var(--text-base-line-height);
+}
+
+.paragraphSmall {
+  font-size: var(--text-small-font-size);
+  line-height: var(--text-small-line-height);
+}
+
+.paragraphTiny {
+  font-size: var(--text-tiny-font-size);
+  line-height: var(--text-tiny-line-height);
+}
