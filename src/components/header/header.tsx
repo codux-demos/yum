@@ -4,6 +4,7 @@ import styles from './header.module.scss';
 import { AuthStatus } from './auth-status/auth-status';
 import { Logo } from '../logo/logo';
 import { LinkButton } from '../link-button/link-button';
+import { authenticationService } from '../../services/authentication';
 
 export interface HeaderProps {
     className?: string;
@@ -22,7 +23,11 @@ export const Header = ({ className, userAuthenticated }: HeaderProps) => {
                 </div>
                 {userAuthenticated ? <input placeholder="Search in Yum..." /> : <div />}
                 <div className={styles.rightContainer}>
-                    <AuthStatus userAuthenticated={userAuthenticated} />
+                    <AuthStatus
+                        userAuthenticated={userAuthenticated}
+                        logIn={() => authenticationService.login()}
+                        signUp={() => null}
+                    />
                 </div>
             </div>
         </div>

@@ -1,54 +1,58 @@
-import { Outlet, RouteObject, redirect, LoaderFunctionArgs } from 'react-router-dom';
-import { Discover } from './components/discover/discover';
-import { Restaurant } from './components/restaurant/restaurant-container';
-import { Restaurants } from './components/restaurants/restaurants';
-import { restaurants as restaurantsData } from './data/restaurants';
-import { Home } from './components/home/home';
+import { Outlet, RouteObject, redirect } from 'react-router-dom';
+import App from './App';
+import { authenticationService } from './services/authentication';
+import { DiscoverContainer } from './components/discover/discover-container';
+import { RestaurantsContainer } from './components/restaurants/restaurants-container';
+import { LandingPage } from './components/landing-page/landing-page';
+
+export function loader() {
+    if (!authenticationService.getAuthStatus()) {
+        return null;
+    }
+
+    return redirect('/il/tel-aviv');
+}
 
 export const routes: RouteObject[] = [
     {
         id: 'root',
         path: '/',
-        element: <Home />,
-        children: [
-            {
-                path: 'discover',
-                element: <Discover data={restaurantsData} />,
-            },
-            {
-                path: 'discover/restaurants',
-                element: <Restaurants data={restaurantsData} />,
-            },
-            {
-                path: 'stores',
-                element: <div>Stores</div>,
-            },
-        ],
+        element: <App />,
+        loader,
     },
-
     {
-        path: ':country',
+        path: ':country/:city',
         element: <Outlet />,
         children: [
             {
-                path: ':city',
-                element: <Outlet />,
-                children: [
-                    {
-                        path: 'restaurant/:id',
-                        element: <Restaurant />,
-                    },
-                    {
-                        path: 'venue/:id',
-                        element: <div>VenueId</div>,
-                    },
-                    {
-                        path: 'category/:id',
-                        element: <div>CategoryId</div>,
-                    },
-                ],
+                path: '',
+                element: <DiscoverContainer />,
+            },
+            {
+                path: 'restaurants',
+                element: <RestaurantsContainer />,
+            },
+            {
+                path: 'stores',
+                element: <RestaurantsContainer />,
             },
         ],
+
+        // children: [
+        //     {
+        //         index: true,
+        //         path: 'restaurant/:id',
+        //         element: <RestaurantContainer />,
+        //     },
+        //     {
+        //         path: 'venue/:id',
+        //         element: <div>VenueId</div>,
+        //     },
+        //     {
+        //         path: 'category/:id',
+        //         element: <div>CategoryId</div>,
+        //     },
+        // ],
     },
     {
         path: '*',
