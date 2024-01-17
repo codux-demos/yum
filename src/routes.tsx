@@ -1,5 +1,4 @@
 import { Outlet, RouteObject, redirect } from 'react-router-dom';
-import App from './App';
 import { authenticationService } from './services/authentication';
 import { DiscoverContainer } from './components/discover/discover-container';
 import { RestaurantsContainer } from './components/restaurants/restaurants-container';
@@ -17,7 +16,7 @@ export const routes: RouteObject[] = [
     {
         id: 'root',
         path: '/',
-        element: <App />,
+        element: <LandingPage />,
         loader,
     },
     {

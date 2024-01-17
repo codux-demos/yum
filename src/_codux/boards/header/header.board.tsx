@@ -3,7 +3,7 @@ import { MemoryRouter } from 'react-router-dom';
 import { Header } from '../../../components/header/header';
 
 export default createBoard({
-    name: 'Header',
+    name: '📦 Header',
     Board: () => {
         return (
             <MemoryRouter>

@@ -2,7 +2,7 @@ import { createBoard } from '@wixc3/react-board';
 import styles from "./typography.module.scss";
 
 export default createBoard({
-    name: 'Typography',
+    name: '🗂️ Typography',
     Board: () => <div className={styles.root}>
         <h1 className={styles.headingHuge}>People who love to eat are always the best people</h1>
         <h2 className={styles.headingExtraLarge}>Food, to me, is always about cooking and eating with those you love and care for</h2>

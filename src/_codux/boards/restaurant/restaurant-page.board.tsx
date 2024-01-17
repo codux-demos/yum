@@ -2,7 +2,7 @@ import { createBoard } from '@wixc3/react-board';
 import { Restaurant } from '../../../components/restaurant/restaurant';
 
 export default createBoard({
-    name: 'RestaurantPage',
+    name: '📄 RestaurantPage',
     Board: () => <Restaurant restaurantName="Restaurant Name" />,
     isSnippet: false,
     environmentProps: {

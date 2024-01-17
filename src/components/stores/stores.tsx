@@ -1,6 +1,6 @@
 import type { Restaurant } from '../../types';
 import classNames from 'classnames';
-import styles from './restaurants.module.scss';
+import styles from './stores.module.scss';
 
 export interface StoresProps {
     className?: string;

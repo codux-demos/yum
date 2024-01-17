@@ -3,7 +3,7 @@ import { MemoryRouter } from 'react-router-dom';
 import { PartnersSection } from '../../../components/partners-section/partners-section';
 
 export default createBoard({
-    name: 'PartnersSection',
+    name: '📦 PartnersSection',
     Board: () => (
         <MemoryRouter>
             <PartnersSection />

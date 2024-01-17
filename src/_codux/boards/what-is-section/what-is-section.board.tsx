@@ -2,7 +2,7 @@ import { createBoard } from '@wixc3/react-board';
 import { WhatIsSection } from '../../../components/what-is-section/what-is-section';
 
 export default createBoard({
-    name: 'WhatIsSection',
+    name: '📦 WhatIsSection',
     Board: () => <WhatIsSection />,
     isSnippet: false,
     environmentProps: {

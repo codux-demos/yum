@@ -6,8 +6,8 @@ import { authenticationService } from '../../../services/authentication';
 export interface AuthStatusProps {
     className?: string;
     userAuthenticated?: boolean;
-    logIn: () => void;
-    signUp: () => void;
+    logIn?: () => void;
+    signUp?: () => void;
 }
 
 export const AuthStatus = ({ className, userAuthenticated, logIn, signUp }: AuthStatusProps) => {

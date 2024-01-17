@@ -3,7 +3,7 @@ import { MemoryRouter } from 'react-router-dom';
 import { NavLink } from '../../../components/nav-link/nav-link';
 
 export default createBoard({
-    name: 'NavLink',
+    name: '🔩 NavLink',
     Board: () => (
         <MemoryRouter>
             <NavLink>Nav Link</NavLink>

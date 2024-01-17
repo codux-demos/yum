@@ -3,7 +3,7 @@ import { MemoryRouter } from 'react-router-dom';
 import { Link } from '../../../components/link/link';
 
 export default createBoard({
-    name: 'Link',
+    name: '🔩 Link',
     Board: () => (
         <MemoryRouter>
             <Link />

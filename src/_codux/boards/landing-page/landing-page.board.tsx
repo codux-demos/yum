@@ -3,7 +3,7 @@ import { LandingPage } from '../../../components/landing-page/landing-page';
 import { MemoryRouter } from 'react-router-dom';
 
 export default createBoard({
-    name: 'LandingPage',
+    name: '📄 LandingPage',
     Board: () => (
         <MemoryRouter>
             <LandingPage />

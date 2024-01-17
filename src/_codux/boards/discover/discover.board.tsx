@@ -4,7 +4,7 @@ import { Discover } from '../../../components/discover/discover';
 import { restaurants } from '../../../data/restaurants';
 
 export default createBoard({
-    name: 'Discover Page',
+    name: '📄 Discover Page',
     Board: () => (
         <MemoryRouter>
             <Discover data={restaurants} />

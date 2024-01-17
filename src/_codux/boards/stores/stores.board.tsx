@@ -1,20 +1,20 @@
 import { createBoard } from '@wixc3/react-board';
 import { MemoryRouter } from 'react-router-dom';
-import { Home } from '../../../components/home/home';
+import { Stores } from '../../../components/stores/stores';
 
 export default createBoard({
-    name: '📄 Home',
+    name: '📄 Stores',
     Board: () => (
         <MemoryRouter>
-            <Home />
+            <Stores data={[]} />
         </MemoryRouter>
     ),
-    isSnippet: false,
+    isSnippet: true,
     environmentProps: {
         canvasMargin: {
-            top: 1,
             left: 0,
             right: 0,
+            top: 1,
         },
     },
 });

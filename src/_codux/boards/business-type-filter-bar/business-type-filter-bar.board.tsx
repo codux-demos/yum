@@ -3,7 +3,7 @@ import { MemoryRouter } from 'react-router-dom';
 import { BusinessTypeFilterBar } from '../../../components/business-type-filter-bar/business-type-filter-bar';
 
 export default createBoard({
-    name: 'BusinessTypeFilterBar',
+    name: '📦 BusinessTypeFilterBar',
     Board: () => (
         <MemoryRouter>
             <BusinessTypeFilterBar />

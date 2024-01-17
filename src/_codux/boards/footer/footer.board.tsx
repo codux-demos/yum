@@ -3,7 +3,7 @@ import { MemoryRouter } from 'react-router-dom';
 import { Footer } from '../../../components/footer/footer';
 
 export default createBoard({
-    name: 'Footer',
+    name: '📦 Footer',
     Board: () => (
         <MemoryRouter>
             <Footer />

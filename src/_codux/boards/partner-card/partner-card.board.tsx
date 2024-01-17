@@ -3,7 +3,7 @@ import { MemoryRouter } from 'react-router-dom';
 import { PartnerCard } from '../../../components/partner-card/partner-card';
 
 export default createBoard({
-    name: 'PartnerCard',
+    name: '📦 PartnerCard',
     Board: () => <MemoryRouter><PartnerCard /></ MemoryRouter>,
     isSnippet: true,
     environmentProps: {
