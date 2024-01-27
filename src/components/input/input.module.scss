@@ -1,0 +1,23 @@
+.root {
+  all: unset;
+  background-color: var(--background-white);
+  font-size: var(--text-base-font-size);
+  line-height: var(--text-base-line-height);
+  flex-grow: 1;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 0 1px var(--border-emphasized) inset;
+  color: var(--text-emphasized);
+
+  &:focus {
+    box-shadow: 0 0 0 1px var(--focus-ring) inset;
+    outline: 1px solid var(--focus-ring);
+  }
+}
+
+.root::placeholder {
+  color: var(--text-muted);
+}

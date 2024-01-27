@@ -1,26 +1,32 @@
 .root {
-  all: unset;
-  padding-top: 8px;
-  padding-right: 20px;
-  padding-bottom: 8px;
-  padding-left: 20px;
-  border-radius: 12px;
-  cursor: pointer;
+    all: unset;
+    padding-top: 8px;
+    padding-right: 20px;
+    padding-bottom: 8px;
+    padding-left: 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    text-align: center;
+
+    &:focus-visible {
+    outline-offset: 1px;
+    outline: 2px solid var(--focus-ring);
+  }
 }
 
 .primary {
-  color: var(--text-emphasized-inverse);
-  background-color: var(--background-black);
+    color: var(--text-emphasized-inverse);
+    background-color: var(--background-black);
 
-  &:hover {
-    opacity: 85%;
-  }
+    &:hover {
+        opacity: 85%;
+    }
 }
 
 .secondary {
-  color: var(--text-emphasized);
+    color: var(--text-emphasized);
 
-  &:hover {
-    background-color: var(--background-accent-light);
-  }
+    &:hover {
+        background-color: var(--background-accent-light);
+    }
 }

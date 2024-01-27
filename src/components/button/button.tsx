@@ -3,7 +3,7 @@ import classNames from 'classnames';
 import styles from './button.module.scss';
 
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-    variant?: 'primary' | 'secondary';
+    variant?: 'primary' | 'secondary' | 'unstyled';
 }
 
 export const Button = ({

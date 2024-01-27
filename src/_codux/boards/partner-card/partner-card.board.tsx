@@ -4,9 +4,14 @@ import { PartnerCard } from '../../../components/partner-card/partner-card';
 
 export default createBoard({
     name: '📦 PartnerCard',
-    Board: () => <MemoryRouter><PartnerCard /></ MemoryRouter>,
+    Board: () => (
+        <MemoryRouter>
+            <PartnerCard />
+        </MemoryRouter>
+    ),
     isSnippet: true,
     environmentProps: {
         canvasWidth: 371,
+        windowBackgroundColor: '#dddddd',
     },
 });

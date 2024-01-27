@@ -112,7 +112,7 @@ export const Footer = ({ className }: FooterProps) => {
                 </div>
                 <div className={styles.bottomContainer}>
                     <div className={styles.actionsContainer}>
-                        <LinkButton>Israel</LinkButton>
+                        <LinkButton>United States</LinkButton>
                         <LinkButton>English</LinkButton>
                         <LinkButton>Accessibility</LinkButton>
                     </div>

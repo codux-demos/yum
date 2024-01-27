@@ -9,7 +9,7 @@ export default createBoard({
             <Stores data={[]} />
         </MemoryRouter>
     ),
-    isSnippet: true,
+    isSnippet: false,
     environmentProps: {
         canvasMargin: {
             left: 0,

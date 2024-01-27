@@ -1,0 +1,9 @@
+.root {
+  padding: 4px;
+  border-radius: 999rem;
+
+  &:focus-visible {
+    outline-offset: 1px;
+    outline: 2px solid var(--focus-ring);
+  }
+}

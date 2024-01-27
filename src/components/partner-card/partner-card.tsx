@@ -17,16 +17,12 @@ export const PartnerCard = ({
     title = 'Card title',
     link = 'Link label',
     to = '/',
-    imageSrc = 'https://wixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg',
-    imageAltText = ""
+    imageSrc = 'https://static.wixstatic.com/media/f09b13_6ec13d6fe0cc4ecb8834fe856605b9f6~mv2.jpg',
+    imageAltText = '',
 }: PartnerCardProps) => {
     return (
         <div className={classNames(styles.root, className)}>
-            <img
-                src={imageSrc}
-                alt={imageAltText}
-                className={styles.image}
-            />
+            <div className={styles.image} style={{ backgroundImage: `url(${imageSrc})` }} />
             <h3 className={styles.title}>{title}</h3>
             <Link className={styles.link} to={to}>
                 {link}

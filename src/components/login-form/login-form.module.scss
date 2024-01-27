@@ -1,0 +1,63 @@
+.root {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-size: var(--heading-medium-font-size);
+    line-height: var(--heading-medium-line-height);
+    color: var(--text-emphasized);
+}
+
+.subtitle {}
+
+.header {
+    margin-bottom: 32px;
+}
+
+.socialButtonsContainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+.dividerSection {
+    display: grid;
+    grid-template-areas: "cell";
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.emailSection {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+    gap: 8px;
+}
+
+.termsSection {
+    box-shadow: 0 1px 0 0 var(--border-default) inset;
+    padding-top: 16px;
+    font-size: var(--text-tiny-font-size);
+    line-height: var(--text-tiny-line-height);
+    color: var(--text-muted)
+}
+
+.divider {
+    grid-area: cell;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--border-default);
+}
+
+.dividerText {
+    grid-area: cell;
+    font-size: var(--text-small-font-size);
+    line-height: var(--text-small-line-height);
+    color: var(--text-muted);
+    background: var(--background-white);
+    justify-self: center;
+    padding-right: 16px;
+    padding-left: 16px;
+}

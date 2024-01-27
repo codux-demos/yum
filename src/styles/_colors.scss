@@ -30,6 +30,23 @@
   initial-value: rgba(255, 255, 255, 0.5);
 }
 
+// Border
+@property --border-emphasized {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: rgba(51, 40, 36, 0.25);
+}
+@property --border-default {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: rgba(51, 40, 36, 0.12);
+}
+@property --border-muted {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: rgba(51, 40, 36, 0.05);
+}
+
 //Background
 @property --background-white {
   syntax: '<color>';
@@ -55,4 +72,11 @@
   syntax: '<color>';
   inherits: true;
   initial-value: #fcf2db;
+}
+
+//Functional
+@property --focus-ring {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #df9d1e;
 }

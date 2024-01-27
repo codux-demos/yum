@@ -10,7 +10,7 @@ export default createBoard({
             <LandingPage />
         </MemoryRouter>
     ),
-    isSnippet: true,
+    isSnippet: false,
     environmentProps: {
         canvasMargin: {
             left: 0,

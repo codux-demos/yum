@@ -1,0 +1,35 @@
+.root {
+    padding: 40px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    row-gap: 8px;
+}
+
+.sectionTitle {
+    font-size: var(--heading-small-font-size);
+    line-height: var(--heading-small-line-height);
+}
+
+.header {
+    border-bottom: 1px solid var(--text-muted);
+    padding-bottom: 16px;
+}
+
+.iconsGrid {
+    display: flex;
+    gap: 8px;
+
+    &>* {
+        background-color: red;
+        color: var(--text-emphasized);
+        background: var(--background-light-grey);
+    }
+}
