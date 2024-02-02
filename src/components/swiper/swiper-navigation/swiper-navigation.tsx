@@ -15,11 +15,17 @@ export const SwiperNavigation = ({ className, isBeginning, isEnd }: SwiperNaviga
     return (
         <div className={classNames(styles.root, className)}>
             <IconButton
+                className={styles.prevButton}
                 disabled={isBeginning}
                 onClick={() => swiper.slidePrev()}
                 icon="chevronLeft"
             />
-            <IconButton disabled={isEnd} onClick={() => swiper.slideNext()} icon="chevronRight" />
+            <IconButton
+                className={styles.nextButton}
+                disabled={isEnd}
+                onClick={() => swiper.slideNext()}
+                icon="chevronRight"
+            />
         </div>
     );
 };

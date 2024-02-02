@@ -1,2 +1,7 @@
 .root {
 }
+
+.prevButton:focus-visible,
+.nextButton:focus-visible {
+  outline-offset: -2px;
+}
