@@ -1,0 +1,27 @@
+.root {
+}
+
+.title {
+  font-family: inherit;
+  font-size: var(--text-large-font-size);
+  line-height: var(--text-large-line-height);
+  font-weight: 400;
+  color: var(--text-emphasized);
+}
+
+.baseCardContent {
+  padding: 0;
+}
+
+.baseCardImage {
+  aspect-ratio: 2/1;
+}
+
+.content {
+  padding: 16px;
+}
+
+.footer {
+  padding: 16px;
+  box-shadow: 0 1px 0 0 var(--border-default) inset;
+}

@@ -1,0 +1,18 @@
+.root {
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border-default);
+  font-weight: 400;
+  font-weight: inherit;
+}
+
+.image {
+  aspect-ratio: 3/2;
+  background-size: cover;
+  background-position: center;
+}
+
+.content {
+  padding: 16px;
+  background-color: var(--background-white);
+}

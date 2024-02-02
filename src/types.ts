@@ -14,3 +14,8 @@ export type Country = {
     name: string;
     cities: City[];
 };
+
+export type FoodCategory = {
+    id: string;
+    name: string;
+};

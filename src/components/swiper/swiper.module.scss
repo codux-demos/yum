@@ -1,0 +1,17 @@
+.root {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 40px;
+}
+
+.title {
+    font-size: var(--heading-medium-font-size);
+    line-height: var(--heading-medium-line-height);
+}

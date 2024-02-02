@@ -11,7 +11,7 @@ import { IconButton } from '../icon-button/icon-button';
 import classNames from 'classnames';
 import styles from './dialog.module.scss';
 
-interface DialogElementsClassNames {
+export interface DialogElementsClassNames {
     backdrop?: string;
 }
 

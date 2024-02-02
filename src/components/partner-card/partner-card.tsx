@@ -5,7 +5,6 @@ import styles from './partner-card.module.scss';
 
 export interface PartnerCardProps {
     imageSrc?: string;
-    imageAltText?: string;
     title?: string;
     link?: string;
     to?: To;
@@ -18,7 +17,6 @@ export const PartnerCard = ({
     link = 'Link label',
     to = '/',
     imageSrc = 'https://static.wixstatic.com/media/f09b13_6ec13d6fe0cc4ecb8834fe856605b9f6~mv2.jpg',
-    imageAltText = '',
 }: PartnerCardProps) => {
     return (
         <div className={classNames(styles.root, className)}>

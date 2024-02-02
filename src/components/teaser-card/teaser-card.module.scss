@@ -1,0 +1,30 @@
+.root {
+    display: grid;
+    grid-template-areas: 'card';
+}
+
+.image {
+    grid-area: card;
+}
+
+.content {
+    grid-area: card;
+    align-self: end;
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+    background-color: transparent;
+    padding-right: 20%
+}
+
+.title {
+    display: inline-block;
+    font-size: var(--heading-large-font-size);
+    line-height: var(--heading-large-line-height);
+}
+
+.description {
+    display: inline-block;
+    font-size: var(--text-large-font-size);
+    line-height: var(--text-large-line-height);
+}

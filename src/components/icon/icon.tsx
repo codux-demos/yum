@@ -1,11 +1,26 @@
-import { AppleLogoIcon, CloseIcon, FacebookLogoIcon, GoogleLogoIcon } from '../../assets/icons';
+import {
+    AppleLogoIcon,
+    ChevronLeftIcon,
+    ChevronRightIcon,
+    CloseIcon,
+    FacebookLogoIcon,
+    GoogleLogoIcon,
+} from '../../assets/icons';
 import classNames from 'classnames';
 import styles from './icon.module.scss';
 
-export type IconOptions = 'appleLogo' | 'close' | 'facebookLogo' | 'googleLogo';
+export type IconOptions =
+    | 'appleLogo'
+    | 'chevronLeft'
+    | 'chevronRight'
+    | 'close'
+    | 'facebookLogo'
+    | 'googleLogo';
 
 const iconDictionary = {
     appleLogo: <AppleLogoIcon />,
+    chevronLeft: <ChevronLeftIcon />,
+    chevronRight: <ChevronRightIcon />,
     close: <CloseIcon />,
     facebookLogo: <FacebookLogoIcon />,
     googleLogo: <GoogleLogoIcon />,
