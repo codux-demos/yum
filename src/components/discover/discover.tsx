@@ -1,10 +1,12 @@
 import type { FoodCategory, Restaurant } from '../../types';
-import { NavLink } from '../nav-link/nav-link';
 import { CategoryCard } from '../category-card/category-card';
 import { Swiper } from '../swiper/swiper';
 import { BusinessCard } from '../business-card/business-card';
 import { BaseCard } from '../base-card/base-card';
 import { TeaserCard } from '../teaser-card/teaser-card';
+import { Header } from '../header/header';
+import { BusinessTypeFilterBar } from '../business-type-filter-bar/business-type-filter-bar';
+import { Footer } from '../footer/footer';
 import classNames from 'classnames';
 import styles from './discover.module.scss';
 
@@ -17,7 +19,9 @@ export interface DiscoverProps {
 export const Discover = ({ className, data, foodCategories }: DiscoverProps) => {
     return (
         <div className={classNames(styles.root, className)}>
-            <h1>Discover</h1>
+            <Header userAuthenticated={true} />
+            <BusinessTypeFilterBar />
+            {/* <h1>Discover</h1>
             <ul>
                 {data.map((restaurant) => {
                     const path = `/${restaurant.country}/${restaurant.city}/restaurant/${restaurant.id}`;
@@ -27,7 +31,7 @@ export const Discover = ({ className, data, foodCategories }: DiscoverProps) => 
                         </li>
                     );
                 })}
-            </ul>
+            </ul> */}
             <section className={styles.section}>
                 <div className={styles.content}>
                     <Swiper
@@ -111,13 +115,14 @@ export const Discover = ({ className, data, foodCategories }: DiscoverProps) => 
                             <TeaserCard
                                 title="Teaser card title"
                                 description="Yum: A symphony of tastes, delivered directly to your door"
-                                elementsClassNames={{image:styles.teaserCardImage}}
+                                elementsClassNames={{ image: styles.teaserCardImage }}
                             />
                         ))}
                         slidesPerView={2}
                     />
                 </div>
             </section>
+            <Footer />
         </div>
     );
 };
