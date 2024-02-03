@@ -26,10 +26,21 @@ export const BusinessCard = ({
             {...props}
         >
             <div className={classNames(styles.content, elementsClassNames?.content)}>
-                <h3 className={styles.title}>{title}</h3>
-                <span>{description}</span>
+                <div className={styles.restaurantDetailsContainer}>
+                    <h3 className={styles.title}>{title}</h3>
+                    <span className={styles.description}>{description}</span>
+                </div>
+                <div className={styles.deliveryTimeContainer}>
+                    <span className={styles.time}>35-45 </span>
+                    <span className={styles.units}>min</span>
+                </div>
             </div>
-            <footer className={classNames(styles.footer, elementsClassNames?.footer)}></footer>
+            <footer className={classNames(styles.footer, elementsClassNames?.footer)}>
+                <span className={styles.deliveryPrice}>
+                    <span>$</span>16.00
+                </span>
+                <span className={styles.satisfactionScore}>4.6</span>
+            </footer>
         </BaseCard>
     );
 };

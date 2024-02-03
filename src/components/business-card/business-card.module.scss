@@ -1,14 +1,6 @@
 .root {
 }
 
-.title {
-  font-family: inherit;
-  font-size: var(--text-large-font-size);
-  line-height: var(--text-large-line-height);
-  font-weight: 400;
-  color: var(--text-emphasized);
-}
-
 .baseCardContent {
   padding: 0;
 }
@@ -18,10 +10,73 @@
 }
 
 .content {
+  display: flex;
+  column-gap: 24px;
   padding: 16px;
 }
 
+.restaurantDetailsContainer {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.title {
+  font-family: inherit;
+  font-size: var(--text-large-font-size);
+  line-height: var(--text-large-line-height);
+  font-weight: 400;
+  color: var(--text-emphasized);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.description {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.deliveryTimeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 80px;
+  flex-shrink: 0;
+  background-color: var(--background-accent-light);
+  border-radius: 12px;
+  row-gap: 2px;
+}
+
+.time {
+  font-size: var(--text-small-font-size);
+  line-height: 1;
+}
+
+.units {
+  font-size: var(--text-tiny-font-size);
+  line-height: 1;
+}
+
 .footer {
-  padding: 16px;
+  padding: 8px 16px;
   box-shadow: 0 1px 0 0 var(--border-default) inset;
+  display: flex;
+  column-gap: 8px;
+  color: var(--text-muted);
+  font-size: var(--text-small-font-size);
+  line-height: var(--text-small-line-height);
+}
+
+.deliveryPrice {
+}
+
+.satisfactionScore {
+  display: inline-block;
+  padding-right: 4px;
+  padding-left: 4px;
+  border-radius: 4px;
+  box-shadow: 0 0 0 1px var(--border-emphasized) inset;
 }
