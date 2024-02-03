@@ -5,13 +5,13 @@ export default createBoard({
     name: '📦 TeaserCard',
     Board: () => (
         <TeaserCard
-            title="Teaser card title Teaser card title Teaser card title"
-            description="Yum: A symphony of tastes, delivered directly to your door Yum: A symphony of tastes, delivered directly to your door Yum: A symphony of tastes, delivered directly to your door"
+            title="Good food is the foundation of genuine happiness"
+            description="Discover how the choices on your plate can be the key to unlocking genuine happiness and fulfillment"
         />
     ),
     isSnippet: false,
     environmentProps: {
-        canvasWidth: 593,
+        canvasWidth: 535,
         windowBackgroundColor: '#dddddd',
     },
 });
