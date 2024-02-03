@@ -5,6 +5,7 @@ import {
     CloseIcon,
     FacebookLogoIcon,
     GoogleLogoIcon,
+    SearchIcon,
 } from '../../assets/icons';
 import classNames from 'classnames';
 import styles from './icon.module.scss';
@@ -15,7 +16,8 @@ export type IconOptions =
     | 'chevronRight'
     | 'close'
     | 'facebookLogo'
-    | 'googleLogo';
+    | 'googleLogo'
+    | 'search';
 
 const iconDictionary = {
     appleLogo: <AppleLogoIcon />,
@@ -24,6 +26,7 @@ const iconDictionary = {
     close: <CloseIcon />,
     facebookLogo: <FacebookLogoIcon />,
     googleLogo: <GoogleLogoIcon />,
+    search: <SearchIcon />,
 };
 
 export interface IconProps {
