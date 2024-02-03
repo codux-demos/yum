@@ -2,7 +2,7 @@ import { createBoard } from '@wixc3/react-board';
 import { TeaserCard } from '../../../components/teaser-card/teaser-card';
 
 export default createBoard({
-    name: '🔩 TeaserCard',
+    name: '📦 TeaserCard',
     Board: () => (
         <TeaserCard
             title="Teaser card title Teaser card title Teaser card title"

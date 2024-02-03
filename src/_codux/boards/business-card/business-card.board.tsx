@@ -2,7 +2,7 @@ import { createBoard } from '@wixc3/react-board';
 import { BusinessCard } from '../../../components/business-card/business-card';
 
 export default createBoard({
-    name: '🔩 BusinessCard',
+    name: '📦 BusinessCard',
     Board: () => (
         <BusinessCard
             title="Yum Cafe"
