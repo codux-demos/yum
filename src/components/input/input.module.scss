@@ -1,23 +1,27 @@
 .root {
-  all: unset;
-  background-color: var(--background-white);
-  font-size: var(--text-base-font-size);
-  line-height: var(--text-base-line-height);
-  flex-grow: 1;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  padding-right: 20px;
-  padding-left: 20px;
-  border-radius: 12px;
-  box-shadow: 0 0 0 1px var(--border-emphasized) inset;
-  color: var(--text-emphasized);
+    display: block;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border: none;
+    border-radius: 12px;
+    font-family: inherit;
+    font-size: var(--text-base-font-size);
+    line-height: var(--text-base-line-height);
+    color: var(--text-emphasized);
+    background-color: var(--background-white);
+    box-shadow: 0 0 0 1px var(--border-emphasized) inset;
 
-  &:focus {
-    box-shadow: 0 0 0 1px var(--focus-ring) inset;
-    outline: 1px solid var(--focus-ring);
-  }
+    &:focus {
+        box-shadow: 0 0 0 1px var(--focus-ring) inset;
+        outline: 1px solid var(--focus-ring);
+    }
+
+    display:block;
+    width:100%;
 }
 
 .root::placeholder {
-  color: var(--text-muted);
+    color: var(--text-muted);
 }

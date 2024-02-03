@@ -1,6 +1,12 @@
 .root {
     display: flex;
     justify-content: center;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    background-color: var(--background-white);
+    box-shadow: 0 1px 0 0 var(--border-default);
 }
 
 .content {

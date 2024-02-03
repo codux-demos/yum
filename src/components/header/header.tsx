@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { AuthStatus } from './auth-status/auth-status';
 import { Logo } from '../logo/logo';
 import { LinkButton } from '../link-button/link-button';
+import { Search } from '../search/search';
 import classNames from 'classnames';
 import styles from './header.module.scss';
 
@@ -22,7 +23,11 @@ export const Header = ({ className, userAuthenticated, onLogIn, onSignUp }: Head
                     </Link>
                     {userAuthenticated && <LinkButton>New York</LinkButton>}
                 </div>
-                {userAuthenticated ? <input placeholder="Search in Yum..." /> : <div />}
+                {userAuthenticated ? (
+                        <Search placeholder="Search in Yum..."/>
+                ) : (
+                    <div />
+                )}
                 <div className={styles.rightContainer}>
                     <AuthStatus
                         userAuthenticated={userAuthenticated}
