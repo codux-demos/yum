@@ -1,31 +1,23 @@
 .root {
-  all: unset;
   padding-top: 8px;
   padding-right: 20px;
   padding-bottom: 8px;
   padding-left: 20px;
   border-radius: 12px;
+  font-size: var(--text-base-font-size);
+  line-height: var(--text-base-line-height);
   text-align: center;
-
-  &:not(:disabled) {
-    cursor: pointer;
-  }
-
-  &:focus-visible {
-    outline-offset: 1px;
-    outline: 2px solid var(--focus-ring);
-  }
 }
 
 .primary {
   color: var(--text-emphasized-inverse);
   background-color: var(--background-black);
 
-  &:disabled {
+  &[aria-disabled='true'] {
     opacity: 40%;
   }
 
-  &:not(:disabled):hover {
+  &:not([aria-disabled='true']):hover {
     opacity: 85%;
   }
 }
@@ -33,11 +25,11 @@
 .secondary {
   color: var(--text-emphasized);
 
-  &:disabled {
+  &[aria-disabled='true'] {
     opacity: 40%;
   }
 
-  &:not(:disabled):hover {
+  &:not([aria-disabled='true']):hover {
     background-color: var(--background-accent-light);
   }
 }

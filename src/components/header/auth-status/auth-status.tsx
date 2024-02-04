@@ -1,6 +1,6 @@
+import { Button } from '../../button/button';
 import classNames from 'classnames';
 import styles from './auth-status.module.scss';
-import { Button } from '../../button/button';
 
 export interface AuthStatusProps {
     className?: string;
@@ -18,7 +18,7 @@ export const AuthStatus = ({
     return (
         <div className={classNames(styles.root, className)}>
             {userAuthenticated ? (
-                <button>UN</button>
+                <Button variant="unstyled">UN</Button>
             ) : (
                 <div className={styles.actions}>
                     <Button onClick={onLogIn}>Log in</Button>

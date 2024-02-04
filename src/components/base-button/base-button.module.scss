@@ -1,0 +1,15 @@
+.root {
+  background-color: unset;
+  border: unset;
+  padding: unset;
+  font-family: inherit;
+
+  &:not([aria-disabled='true'], :disabled) {
+    cursor: pointer;
+  }
+
+  &:focus-visible {
+    outline-offset: 1px;
+    outline: 2px solid var(--focus-ring);
+  }
+}

@@ -2,6 +2,7 @@ import classNames from 'classnames';
 import styles from './base-card.module.scss';
 import { ReactNode } from 'react';
 
+
 export interface BaseCardElementsClassNames {
     image?: string;
     content?: string;

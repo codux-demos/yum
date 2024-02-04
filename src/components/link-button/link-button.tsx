@@ -1,13 +1,13 @@
-import { ButtonHTMLAttributes } from 'react';
+import { BaseButton, BaseButtonProps } from '../base-button/base-button';
 import classNames from 'classnames';
 import styles from './link-button.module.scss';
 
-export interface LinkButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {}
+export interface LinkButtonProps extends BaseButtonProps {}
 
 export const LinkButton = ({ className, children, ...props }: LinkButtonProps) => {
     return (
-        <button className={classNames(styles.root, className)} {...props}>
+        <BaseButton className={classNames(styles.root, className)} {...props}>
             {children}
-        </button>
+        </BaseButton>
     );
 };

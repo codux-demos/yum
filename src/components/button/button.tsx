@@ -1,8 +1,8 @@
-import { ButtonHTMLAttributes } from 'react';
+import { BaseButton, BaseButtonProps } from '../base-button/base-button';
 import classNames from 'classnames';
 import styles from './button.module.scss';
 
-export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+export interface ButtonProps extends BaseButtonProps {
     variant?: 'primary' | 'secondary' | 'unstyled';
 }
 
@@ -13,8 +13,8 @@ export const Button = ({
     ...props
 }: ButtonProps) => {
     return (
-        <button className={classNames(styles.root, styles[variant], className)} {...props}>
+        <BaseButton className={classNames(styles.root, styles[variant], className)} {...props}>
             {children}
-        </button>
+        </BaseButton>
     );
 };

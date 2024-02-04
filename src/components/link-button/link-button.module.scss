@@ -1,9 +1,13 @@
 .root {
-  all: unset;
   color: 'currentColor';
-  cursor: pointer;
-}
+  font-size: inherit;
+  line-height: inherit;
 
-.root:hover {
-  text-decoration: underline;
+  &[aria-disabled='true'] {
+    opacity: 40%;
+  }
+
+  &:not([aria-disabled='true']):hover {
+    text-decoration: underline;
+  }
 }
