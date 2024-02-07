@@ -14,7 +14,7 @@ export interface BusinessCardProps extends Omit<BaseCardProps, 'children'> {
 
 export const BusinessCard = ({
     className,
-    elementsClassNames,
+    elementsClassNames = {},
     title = 'Buiness name',
     description,
     ...props
@@ -25,7 +25,7 @@ export const BusinessCard = ({
             elementsClassNames={{ content: styles.baseCardContent, image: styles.baseCardImage }}
             {...props}
         >
-            <div className={classNames(styles.content, elementsClassNames?.content)}>
+            <div className={classNames(styles.content, elementsClassNames.content)}>
                 <div className={styles.restaurantDetailsContainer}>
                     <h3 className={styles.title}>{title}</h3>
                     <span className={styles.description}>{description}</span>
@@ -35,7 +35,7 @@ export const BusinessCard = ({
                     <span className={styles.units}>min</span>
                 </div>
             </div>
-            <footer className={classNames(styles.footer, elementsClassNames?.footer)}>
+            <footer className={classNames(styles.footer, elementsClassNames.footer)}>
                 <span className={styles.deliveryPrice}>
                     <span>$</span>16.00
                 </span>

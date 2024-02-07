@@ -2,7 +2,6 @@ import classNames from 'classnames';
 import styles from './base-card.module.scss';
 import { ReactNode } from 'react';
 
-
 export interface BaseCardElementsClassNames {
     image?: string;
     content?: string;
@@ -19,17 +18,15 @@ export const BaseCard = ({
     className,
     imageSrc = 'https://static.wixstatic.com/media/f09b13_6ec13d6fe0cc4ecb8834fe856605b9f6~mv2.jpg',
     children = 'Card content',
-    elementsClassNames,
+    elementsClassNames = {},
 }: BaseCardProps) => {
     return (
         <div className={classNames(styles.root, className)}>
             <div
-                className={classNames(styles.image, elementsClassNames?.image)}
+                className={classNames(styles.image, elementsClassNames.image)}
                 style={{ backgroundImage: `url(${imageSrc})` }}
             />
-            <div className={classNames(styles.content, elementsClassNames?.content)}>
-                {children}
-            </div>
+            <div className={classNames(styles.content, elementsClassNames.content)}>{children}</div>
         </div>
     );
 };

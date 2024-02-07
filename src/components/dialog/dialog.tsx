@@ -24,7 +24,7 @@ export interface DialogProps extends DialogOptions {
 
 export const Dialog = ({
     className,
-    elementsClassNames,
+    elementsClassNames = {},
     dismissible = false,
     children,
     ...props
@@ -35,7 +35,7 @@ export const Dialog = ({
                 className={classNames(styles.root, className)}
                 backdrop={
                     <div
-                        className={classNames(styles.backdrop, elementsClassNames?.backdrop)}
+                        className={classNames(styles.backdrop, elementsClassNames.backdrop)}
                         hidden={!open}
                     />
                 }
@@ -44,9 +44,8 @@ export const Dialog = ({
                 {children}
                 {dismissible && (
                     <AriakitDialogDismiss
-                        render={<IconButton className={styles.dismissButton} icon="close"/> }   
-                    >
-                    </AriakitDialogDismiss>
+                        render={<IconButton className={styles.dismissButton} icon="close" />}
+                    ></AriakitDialogDismiss>
                 )}
             </AriakitDialog>
         </AriakitDialogProvider>

@@ -19,7 +19,7 @@ export interface TeaserCardProps extends Omit<BaseCardProps, 'children'> {
 
 export const TeaserCard = ({
     className,
-    elementsClassNames,
+    elementsClassNames = {},
     title = 'Card title',
     description,
     ...props
@@ -28,13 +28,17 @@ export const TeaserCard = ({
         <BaseCard
             className={classNames(styles.root, className)}
             elementsClassNames={{
-                image: classNames(styles.image, elementsClassNames?.image),
-                content: classNames(styles.content, elementsClassNames?.content),
+                image: classNames(styles.image, elementsClassNames.image),
+                content: classNames(styles.content, elementsClassNames.content),
             }}
             {...props}
         >
-            <h3 className={classNames(styles.title, elementsClassNames?.title)}>{title}</h3>
-            {description !== undefined && <span className={classNames(styles.description, elementsClassNames?.description)}>{description}</span>}
+            <h3 className={classNames(styles.title, elementsClassNames.title)}>{title}</h3>
+            {description !== undefined && (
+                <span className={classNames(styles.description, elementsClassNames.description)}>
+                    {description}
+                </span>
+            )}
         </BaseCard>
     );
 };
