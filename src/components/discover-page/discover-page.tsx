@@ -8,30 +8,19 @@ import { Header } from '../header/header';
 import { BusinessTypeFilterBar } from '../business-type-filter-bar/business-type-filter-bar';
 import { Footer } from '../footer/footer';
 import classNames from 'classnames';
-import styles from './discover.module.scss';
+import styles from './discover-page.module.scss';
 
-export interface DiscoverProps {
+export interface DiscoverPageProps {
     className?: string;
     data: Restaurant[];
     foodCategories: FoodCategory[];
 }
 
-export const Discover = ({ className, data, foodCategories }: DiscoverProps) => {
+export const DiscoverPage = ({ className, data, foodCategories }: DiscoverPageProps) => {
     return (
         <div className={classNames(styles.root, className)}>
             <Header userAuthenticated={true} />
             <BusinessTypeFilterBar />
-            {/* <h1>Discover</h1>
-            <ul>
-                {data.map((restaurant) => {
-                    const path = `/${restaurant.country}/${restaurant.city}/restaurant/${restaurant.id}`;
-                    return (
-                        <li key={restaurant.id}>
-                            <NavLink to={path}>{restaurant.id}</NavLink>
-                        </li>
-                    );
-                })}
-            </ul> */}
             <section className={styles.section}>
                 <div className={styles.content}>
                     <Swiper

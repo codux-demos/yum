@@ -1,6 +1,6 @@
 import { Outlet, RouteObject, redirect } from 'react-router-dom';
 import { authenticationService } from './services/authentication';
-import { DiscoverContainer } from './components/discover/discover-container';
+import { DiscoverPageContainer } from './components/discover-page/discover-page-container';
 import { RestaurantsContainer } from './components/restaurants/restaurants-container';
 import { LandingPage } from './components/landing-page/landing-page';
 
@@ -25,7 +25,7 @@ export const routes: RouteObject[] = [
         children: [
             {
                 path: '',
-                element: <DiscoverContainer />,
+                element: <DiscoverPageContainer />,
             },
             {
                 path: 'restaurants',
