@@ -1,22 +1,20 @@
 import { createBoard } from '@wixc3/react-board';
-import { LandingPage } from '../../../components/landing-page/landing-page';
 import { MemoryRouter } from 'react-router-dom';
+import { StoresPage } from '../../../components/stores-page/stores-page';
 
 export default createBoard({
-    name: '🏠 Landing Page',
+    name: '📄 Stores Page',
     Board: () => (
         <MemoryRouter>
-            <LandingPage />
+            <StoresPage />
         </MemoryRouter>
     ),
     isSnippet: false,
     environmentProps: {
         canvasMargin: {
             left: 0,
-            top: 1,
             right: 0,
+            top: 1,
         },
-        windowHeight: 1311,
-        windowWidth: 1616,
     },
 });

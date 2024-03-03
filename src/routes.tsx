@@ -1,7 +1,8 @@
 import { Outlet, RouteObject, redirect } from 'react-router-dom';
 import { authenticationService } from './services/authentication';
 import { DiscoverPageContainer } from './components/discover-page/discover-page-container';
-import { RestaurantsContainer } from './components/restaurants/restaurants-container';
+import { RestaurantsPageContainer } from './components/restaurants-page/restaurants-page-container';
+import { StoresPageContainer } from './components/stores-page/stores-page-container';
 import { LandingPage } from './components/landing-page/landing-page';
 
 export function loader() {
@@ -9,7 +10,7 @@ export function loader() {
         return null;
     }
 
-    return redirect('/il/tel-aviv');
+    return redirect('/us/new-york');
 }
 
 export const routes: RouteObject[] = [
@@ -29,29 +30,13 @@ export const routes: RouteObject[] = [
             },
             {
                 path: 'restaurants',
-                element: <RestaurantsContainer />,
+                element: <RestaurantsPageContainer />,
             },
             {
                 path: 'stores',
-                element: <RestaurantsContainer />,
+                element: <StoresPageContainer />,
             },
         ],
-
-        // children: [
-        //     {
-        //         index: true,
-        //         path: 'restaurant/:id',
-        //         element: <RestaurantContainer />,
-        //     },
-        //     {
-        //         path: 'venue/:id',
-        //         element: <div>VenueId</div>,
-        //     },
-        //     {
-        //         path: 'category/:id',
-        //         element: <div>CategoryId</div>,
-        //     },
-        // ],
     },
     {
         path: '*',

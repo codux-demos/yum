@@ -1,12 +1,12 @@
 import { createBoard } from '@wixc3/react-board';
+import { RestaurantPage } from '../../../components/restaurant-page/restaurant-page';
 import { MemoryRouter } from 'react-router-dom';
-import { Stores } from '../../../components/stores/stores';
 
 export default createBoard({
-    name: '📄 Stores',
+    name: '📄 Restaurant Page',
     Board: () => (
         <MemoryRouter>
-            <Stores data={[]} />
+            <RestaurantPage restaurantName="Restaurant Name" />
         </MemoryRouter>
     ),
     isSnippet: false,

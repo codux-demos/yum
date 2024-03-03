@@ -12,11 +12,10 @@ import styles from './discover-page.module.scss';
 
 export interface DiscoverPageProps {
     className?: string;
-    data: Restaurant[];
     foodCategories: FoodCategory[];
 }
 
-export const DiscoverPage = ({ className, data, foodCategories }: DiscoverPageProps) => {
+export const DiscoverPage = ({ className, foodCategories }: DiscoverPageProps) => {
     return (
         <div className={classNames(styles.root, className)}>
             <Header userAuthenticated={true} />
