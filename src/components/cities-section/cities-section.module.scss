@@ -1,33 +1,51 @@
 .root {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: stretch;
 }
 
 .header {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
 .title {
-    font-size: var(--heading-extra-large-font-size);
-    line-height: var(--heading-extra-large-line-height);
+  font-size: var(--heading-extra-large-font-size);
+  line-height: var(--heading-extra-large-line-height);
+  color: var(--text-emphasized);
+}
+
+.viewAllCitiesButton {
+  color: var(--link);
 }
 
 .list {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    column-count: 4;
-    column-gap: 20px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  column-count: 4;
+  column-gap: 20px;
+}
+
+.listItem {
+  padding-bottom: 12px;
 }
 
 .content {
-    display: flex;
-    flex-direction: column;
-    max-width: 1200px;
-    padding: 80px 32px;
-    width: 100%;
-    row-gap: 48px;
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  padding: 80px 32px;
+  width: 100%;
+  row-gap: 48px;
+}
+
+.countrySelect {
+  color: currentColor;
+  text-decoration: underline;
+  &:hover {
+    color: #eca828;
+  }
 }

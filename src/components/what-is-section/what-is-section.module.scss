@@ -1,50 +1,59 @@
 .root {
-    background-color: var(--background-light-grey);
-    padding-bottom: 80px;
-    padding-top: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-right: 32px;
-    padding-left: 32px;
+  background-color: transparent;
+  padding-bottom: 80px;
+  padding-top: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 32px;
+  padding-left: 32px;
+  background-image: linear-gradient(
+    180deg,
+    var(--background-light-grey) 0%,
+    var(--background-white) 100%
+  );
 }
 
 .card {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    overflow: hidden;
-    max-width: 1200px;
-    min-height: 600px;
-    border-radius: 12px;
-    background-color: var(--background-white);
-    box-shadow: 0px 24px 48px -24px rgba(0, 0, 0, 0.15), 0px 80px 80px 0px rgba(0, 0, 0, 0.05);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+  max-width: 1200px;
+  min-height: 600px;
+  border-radius: 12px;
+  background-color: var(--background-white);
+  box-shadow:
+    0px 24px 48px -24px rgba(0, 0, 0, 0.15),
+    0px 80px 80px 0px rgba(0, 0, 0, 0.05);
 }
 
 .image {
-    background: center / cover no-repeat url("https://static.wixstatic.com/media/f09b13_4b8cabf6e2cd464287c1ccf0e4c1a5fc~mv2.jpg");
-
+  background: center / cover no-repeat
+    url('https://static.wixstatic.com/media/f09b13_4b8cabf6e2cd464287c1ccf0e4c1a5fc~mv2.jpg');
 }
 
 .content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px;
 }
 
 .title {
-    display: block;
+  display: block;
 }
 
 .title {
-    font-size: var(--heading-small-font-size);
-    line-height: var(--heading-small-line-height);
+  font-size: var(--heading-small-font-size);
+  line-height: var(--heading-small-line-height);
+  color: var(--text-emphasized);
 }
 
 .emphasizedText {
-    font-size: var(--heading-extra-large-font-size);
-    line-height: var(--heading-extra-large-line-height);
-    font-family: Poppins, system-ui, sans-serif;
-    margin-top: 16px;
-    margin-bottom: 32px;
+  font-size: var(--heading-extra-large-font-size);
+  line-height: var(--heading-extra-large-line-height);
+  font-family: Poppins, system-ui, sans-serif;
+  margin-top: 16px;
+  margin-bottom: 32px;
+  color: var(--text-emphasized);
 }

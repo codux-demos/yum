@@ -14,6 +14,11 @@
   inherits: true;
   initial-value: rgba(51, 40, 36, 0.5);
 }
+@property --link {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #0076E3;
+}
 @property --text-emphasized-inverse {
   syntax: '<color>';
   inherits: true;

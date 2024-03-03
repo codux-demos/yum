@@ -1,28 +1,29 @@
 .root {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .title {
-    font-size: var(--heading-extra-large-font-size);
-    line-height: var(--heading-extra-large-line-height);
+  font-size: var(--heading-extra-large-font-size);
+  line-height: var(--heading-extra-large-line-height);
+  color: var(--text-emphasized);
 }
 
 .content {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    row-gap: 32px;
-    padding-top: 80px;
-    padding-bottom: 120px;
-    padding-right: 32px;
-    padding-left: 32px;
-    min-height: 560px;
-    justify-content: center;
-    max-width: 800px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+  padding-top: 80px;
+  padding-bottom: 160px;
+  padding-right: 32px;
+  padding-left: 32px;
+  min-height: 560px;
+  justify-content: center;
+  max-width: 800px;
 }
 
 .text {
-    font-size: var(--text-extra-large-font-size);
-    line-height: var(--text-extra-large-line-height);
+  font-size: var(--text-extra-large-font-size);
+  line-height: var(--text-extra-large-line-height);
 }
