@@ -6,6 +6,6 @@ export default createBoard({
     Board: () => <AddressPicker />,
     isSnippet: false,
     environmentProps: {
-        windowBackgroundColor: '#dddddd'
-    }
+        windowBackgroundColor: '#eeeeee',
+    },
 });

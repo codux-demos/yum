@@ -14,8 +14,10 @@ export default createBoard({
         canvasMargin: {
             left: 0,
             right: 0,
-            top: 1,
+            top: 0,
         },
-        windowBackgroundColor: '#dddddd'
+        windowBackgroundColor: '#eeeeee',
+        windowWidth: 1400,
+        windowHeight: 900,
     },
 });

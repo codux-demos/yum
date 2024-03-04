@@ -12,6 +12,6 @@ export default createBoard({
     isSnippet: true,
     environmentProps: {
         canvasWidth: 371,
-        windowBackgroundColor: '#dddddd',
+        windowBackgroundColor: '#eeeeee',
     },
 });

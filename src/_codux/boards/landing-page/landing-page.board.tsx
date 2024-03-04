@@ -13,10 +13,10 @@ export default createBoard({
     environmentProps: {
         canvasMargin: {
             left: 0,
-            top: 1,
+            top: 0,
             right: 0,
         },
-        windowHeight: 1311,
-        windowWidth: 1616,
+        windowHeight: 900,
+        windowWidth: 1400,
     },
 });

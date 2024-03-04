@@ -6,6 +6,7 @@ export default createBoard({
     Board: () => <Input placeholder="Start typing..." />,
     isSnippet: false,
     environmentProps: {
-        windowBackgroundColor: '#dddddd',
+        windowBackgroundColor: '#eeeeee',
+        canvasWidth: 600,
     },
 });

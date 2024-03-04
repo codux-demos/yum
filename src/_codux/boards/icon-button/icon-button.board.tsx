@@ -6,6 +6,6 @@ export default createBoard({
     Board: () => <IconButton />,
     isSnippet: false,
     environmentProps: {
-        windowBackgroundColor: '#dddddd',
+        windowBackgroundColor: '#eeeeee',
     },
 });

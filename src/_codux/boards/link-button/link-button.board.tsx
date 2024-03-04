@@ -6,6 +6,6 @@ export default createBoard({
     Board: () => <LinkButton>Link Button</LinkButton>,
     isSnippet: false,
     environmentProps: {
-        windowBackgroundColor: '#dddddd'
-    }
+        windowBackgroundColor: '#eeeeee',
+    },
 });

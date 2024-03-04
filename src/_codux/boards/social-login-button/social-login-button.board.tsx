@@ -6,6 +6,6 @@ export default createBoard({
     Board: () => <SocialLoginButton variant="google" />,
     isSnippet: false,
     environmentProps: {
-        windowBackgroundColor: '#dddddd',
+        windowBackgroundColor: '#eeeeee',
     },
 });

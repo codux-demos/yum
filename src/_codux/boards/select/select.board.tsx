@@ -6,6 +6,6 @@ export default createBoard({
     Board: () => <Select label="Select" items={['Hello', 'World']} />,
     isSnippet: true,
     environmentProps: {
-        windowBackgroundColor: '#dddddd',
+        windowBackgroundColor: '#eeeeee',
     },
 });
