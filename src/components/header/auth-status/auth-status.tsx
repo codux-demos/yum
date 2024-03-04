@@ -21,8 +21,10 @@ export const AuthStatus = ({
                 <Button variant="unstyled">UN</Button>
             ) : (
                 <div className={styles.actions}>
-                    <Button onClick={onLogIn}>Log in</Button>
-                    <Button variant="primary" onClick={onLogIn}>
+                    <Button onClick={onLogIn} variant="secondary">
+                        Log in
+                    </Button>
+                    <Button variant="secondary" onClick={onLogIn}>
                         Sign up {null}
                     </Button>
                 </div>
