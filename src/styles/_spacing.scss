@@ -1,0 +1,29 @@
+@property --space-4 {
+  syntax: '<length>';
+  inherits: true;
+  initial-value: 4px;
+}
+
+@property --space-8 {
+  syntax: '<length>';
+  inherits: true;
+  initial-value: 8px;
+}
+
+@property --space-12 {
+  syntax: '<length>';
+  inherits: true;
+  initial-value: 12px;
+}
+
+@property --space-16 {
+  syntax: '<length>';
+  inherits: true;
+  initial-value: 16px;
+}
+
+@property --space-24 {
+  syntax: '<length>';
+  inherits: true;
+  initial-value: 24px;
+}
