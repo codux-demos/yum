@@ -42,11 +42,7 @@ export const Dialog = ({
                 {...props}
             >
                 {children}
-                {dismissible && (
-                    <AriakitDialogDismiss
-                        render={<IconButton className={styles.dismissButton} icon="close" />}
-                    ></AriakitDialogDismiss>
-                )}
+                {dismissible && <AriakitDialogDismiss></AriakitDialogDismiss>}
             </AriakitDialog>
         </AriakitDialogProvider>
     );
