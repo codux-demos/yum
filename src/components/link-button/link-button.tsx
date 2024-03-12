@@ -1,14 +1,13 @@
 import classNames from 'classnames';
 import styles from './link-button.module.scss';
-import { ButtonProps } from '../button/button';
-import { Button } from '@ariakit/react';
+import { BaseButton, BaseButtonProps } from '../base-button/base-button';
 
-export interface LinkButtonProps extends ButtonProps {}
+export interface LinkButtonProps extends BaseButtonProps {}
 
 export const LinkButton = ({ className, children, ...props }: LinkButtonProps) => {
     return (
-        <Button className={classNames(styles.root, className)} {...props}>
+        <BaseButton className={classNames(styles.root, className)} {...props}>
             {children}
-        </Button>
+        </BaseButton>
     );
 };
