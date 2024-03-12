@@ -1,11 +1,9 @@
-import { ReactNode, useEffect, useState } from 'react';
+import { ReactNode } from 'react';
 import {
     Dialog as AriakitDialog,
     DialogDismiss as AriakitDialogDismiss,
     DialogOptions,
-    DialogStore,
     DialogProvider as AriakitDialogProvider,
-    useDialogStore,
 } from '@ariakit/react';
 import { IconButton } from '../icon-button/icon-button';
 import classNames from 'classnames';

@@ -1,4 +1,4 @@
-import type { FoodCategory, Restaurant } from '../../types';
+import type { FoodCategory } from '../../types';
 import { CategoryCard } from '../category-card/category-card';
 import { Swiper } from '../swiper/swiper';
 import { BusinessCard } from '../business-card/business-card';

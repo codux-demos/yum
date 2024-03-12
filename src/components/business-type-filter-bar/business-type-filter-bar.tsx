@@ -6,13 +6,13 @@ export interface BusinessTypeFilterBarProps {
     className?: string;
 }
 
-export const BusinessTypeFilterBar = ({ className }: BusinessTypeFilterBarProps) => {
-    const filterOptions = [
-        { id: 'discover', label: 'Discover', path: '/discover' },
-        { id: 'restaurants', label: 'Restaurants', path: '/discover/restaurants' },
-        { id: 'stores', label: 'Stores', path: '/discover/stores' },
-    ];
+const filterOptions = [
+    { id: 'discover', label: 'Discover', path: '/discover' },
+    { id: 'restaurants', label: 'Restaurants', path: '/discover/restaurants' },
+    { id: 'stores', label: 'Stores', path: '/discover/stores' },
+];
 
+export const BusinessTypeFilterBar = ({ className }: BusinessTypeFilterBarProps) => {
     return (
         <div className={classNames(styles.root, className)}>
             <nav className={styles.content}>
