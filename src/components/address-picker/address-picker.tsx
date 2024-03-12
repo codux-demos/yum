@@ -8,11 +8,7 @@ export interface AddressPickerProps {
 export const AddressPicker = ({ className }: AddressPickerProps) => {
     return (
         <div className={classNames(styles.root, className)}>
-            <svg
-                width="18"
-                viewBox="0 0 18 24"
-                className={styles.locationIcon}
-            >
+            <svg width="18" viewBox="0 0 18 24" className={styles.locationIcon}>
                 <path
                     fill="currentColor"
                     fillRule="evenodd"

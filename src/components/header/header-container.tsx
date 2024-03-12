@@ -9,10 +9,10 @@ export interface HeaderContainerProps {
 }
 
 export const HeaderContainer = ({ userAuthenticated }: HeaderContainerProps) => {
-    const [showLoginDialogOpen, setShowLoginDialogOpen] = useState(false);
+    const [isDialogOpen, toggleLoginDialog] = useState(false);
 
     const handleLogin = () => {
-        setShowLoginDialogOpen(true);
+        toggleLoginDialog(true);
         authenticationService.login();
     };
     return (
@@ -22,11 +22,7 @@ export const HeaderContainer = ({ userAuthenticated }: HeaderContainerProps) => 
                 onLogIn={handleLogin}
                 onSignUp={handleLogin}
             />
-            <Dialog
-                open={showLoginDialogOpen}
-                onClose={() => setShowLoginDialogOpen(false)}
-                dismissible
-            >
+            <Dialog open={isDialogOpen} onClose={() => toggleLoginDialog(false)} dismissible>
                 <LoginForm />
             </Dialog>
         </>
