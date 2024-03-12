@@ -16,10 +16,7 @@ export interface SocialLoginButtonProps extends ButtonHTMLAttributes<HTMLButtonE
     variant?: socialButtonOptions;
 }
 
-export const SocialLoginButton = ({
-    className,
-    variant = 'apple',
-}: SocialLoginButtonProps) => {
+export const SocialLoginButton = ({ className, variant = 'apple' }: SocialLoginButtonProps) => {
     const icon = `${variant}Logo` as IconOptions;
     return (
         <Button className={classNames(styles.root, styles[variant], className)} variant="unstyled">

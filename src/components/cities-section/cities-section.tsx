@@ -9,18 +9,20 @@ export interface CitiesSectionProps {
 }
 
 export const CitiesSection = ({ className, country }: CitiesSectionProps) => {
-    const cities = country.cities;
     return (
         <div className={classNames(styles.root, className)}>
             <div className={styles.content}>
                 <div className={styles.header}>
                     <h2 className={styles.title}>
-                        Yum cities in <LinkButton className={styles.countrySelect}>{country.name}</LinkButton>
+                        Yum cities in{' '}
+                        <LinkButton className={styles.countrySelect}>{country.name}</LinkButton>
                     </h2>
-                    <LinkButton className={styles.viewAllCitiesButton}>View all Yum cities</LinkButton>
+                    <LinkButton className={styles.viewAllCitiesButton}>
+                        View all Yum cities
+                    </LinkButton>
                 </div>
                 <ul className={styles.list}>
-                    {cities.map((city) => (
+                    {country.cities.map((city) => (
                         <li className={styles.listItem} key={city.id}>
                             <LinkButton>{city.name}</LinkButton>
                         </li>

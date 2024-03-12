@@ -15,7 +15,11 @@ export const CategoryCard = ({
 }: CategoryCardProps) => {
     const label = counter === 1 ? 'place' : 'places';
     return (
-        <BaseCard className={classNames(styles.root, className)} elementsClassNames={{image: styles.baseCardImage}} {...props}>
+        <BaseCard
+            className={classNames(styles.root, className)}
+            elementsClassNames={{ image: styles.baseCardImage }}
+            {...props}
+        >
             <h3 className={styles.title}>{title}</h3>
             <span className={styles.counterContainer}>
                 {counter} {label}

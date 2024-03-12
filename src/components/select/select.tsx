@@ -2,7 +2,6 @@ import { ReactNode } from 'react';
 import {
     Select as AriakitSelect,
     SelectLabel as AriakitSelectLabel,
-    SelectProvider as AriakitSelectProvider,
     SelectItem as AriakitSelectItem,
     SelectPopover as AriakitSelectPopover,
     useSelectStore,

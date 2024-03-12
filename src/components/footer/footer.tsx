@@ -18,60 +18,61 @@ export interface NavItemProps {
     route: string;
 }
 
+const navItems: NavColumnProps[] = [
+    {
+        category: 'Partners',
+        items: [
+            { label: 'For couriers', route: '/couriers' },
+            { label: 'For merchants', route: '/merchants' },
+        ],
+    },
+    {
+        category: 'Company',
+        items: [
+            { label: 'About us', route: '/about' },
+            { label: 'What we stand for', route: '/values' },
+            { label: 'Jobs', route: '/jobs' },
+            { label: 'Sustainability', route: '/sustainability' },
+            { label: 'Security', route: '/security' },
+            { label: 'Investors', route: '/investors' },
+        ],
+    },
+    {
+        category: 'Products',
+        items: [
+            { label: 'Yum Drive', route: '/yum-drive' },
+            { label: 'Yum Market', route: '/yum-market' },
+            { label: 'Yum+', route: '/yum-plus' },
+            { label: 'Yum for Work', route: '/yum-for-work' },
+        ],
+    },
+    {
+        category: 'Useful links',
+        items: [
+            { label: 'Support', route: '/support' },
+            { label: 'Media', route: '/media' },
+            { label: 'Contact', route: '/contact' },
+            { label: 'Speak up', route: '/speak-up' },
+            { label: 'Promo codes', route: '/promo-codes' },
+            { label: 'Road safety', route: '/road-safety' },
+            { label: 'Developers', route: '/developers' },
+        ],
+    },
+    {
+        category: 'Follow us',
+        items: [
+            { label: 'Blog', route: '/blog' },
+            { label: 'Engineering blog', route: '/engineering-blog' },
+            { label: 'Instagram', route: '/instagram' },
+            { label: 'Facebook', route: '/facebook' },
+            { label: 'Twitter', route: '/twitter' },
+            { label: 'LinkedIn', route: '/linkedin' },
+            { label: 'Yum Life', route: '/yum-life' },
+        ],
+    },
+];
+
 export const Footer = ({ className }: FooterProps) => {
-    const navItems: NavColumnProps[] = [
-        {
-            category: 'Partners',
-            items: [
-                { label: 'For couriers', route: '/couriers' },
-                { label: 'For merchants', route: '/merchants' },
-            ],
-        },
-        {
-            category: 'Company',
-            items: [
-                { label: 'About us', route: '/about' },
-                { label: 'What we stand for', route: '/values' },
-                { label: 'Jobs', route: '/jobs' },
-                { label: 'Sustainability', route: '/sustainability' },
-                { label: 'Security', route: '/security' },
-                { label: 'Investors', route: '/investors' },
-            ],
-        },
-        {
-            category: 'Products',
-            items: [
-                { label: 'Yum Drive', route: '/yum-drive' },
-                { label: 'Yum Market', route: '/yum-market' },
-                { label: 'Yum+', route: '/yum-plus' },
-                { label: 'Yum for Work', route: '/yum-for-work' },
-            ],
-        },
-        {
-            category: 'Useful links',
-            items: [
-                { label: 'Support', route: '/support' },
-                { label: 'Media', route: '/media' },
-                { label: 'Contact', route: '/contact' },
-                { label: 'Speak up', route: '/speak-up' },
-                { label: 'Promo codes', route: '/promo-codes' },
-                { label: 'Road safety', route: '/road-safety' },
-                { label: 'Developers', route: '/developers' },
-            ],
-        },
-        {
-            category: 'Follow us',
-            items: [
-                { label: 'Blog', route: '/blog' },
-                { label: 'Engineering blog', route: '/engineering-blog' },
-                { label: 'Instagram', route: '/instagram' },
-                { label: 'Facebook', route: '/facebook' },
-                { label: 'Twitter', route: '/twitter' },
-                { label: 'LinkedIn', route: '/linkedin' },
-                { label: 'Yum Life', route: '/yum-life' },
-            ],
-        },
-    ];
     return (
         <div className={classNames(styles.root, className)}>
             <div className={styles.content}>

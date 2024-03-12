@@ -15,7 +15,7 @@ export interface BusinessCardProps extends Omit<BaseCardProps, 'children'> {
 export const BusinessCard = ({
     className,
     elementsClassNames = {},
-    title = 'Buiness name',
+    title = 'Business name',
     description,
     ...props
 }: BusinessCardProps) => {
