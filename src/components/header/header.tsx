@@ -23,11 +23,7 @@ export const Header = ({ className, userAuthenticated, onLogIn, onSignUp }: Head
                     </Link>
                     {userAuthenticated && <LinkButton>New York</LinkButton>}
                 </div>
-                {userAuthenticated ? (
-                        <Search placeholder="Search in Yum..."/>
-                ) : (
-                    <div />
-                )}
+                {userAuthenticated ? <Search placeholder="Search in Yum..." /> : <div />}
                 <div className={styles.rightContainer}>
                     <AuthStatus
                         userAuthenticated={userAuthenticated}

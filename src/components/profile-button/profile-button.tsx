@@ -7,5 +7,5 @@ export interface ProfileButtonProps {
 }
 
 export const ProfileButton = ({ className }: ProfileButtonProps) => {
-    return <Button className={classNames(styles.root, className)}/>;
+    return <Button className={classNames(styles.root, className)} />;
 };

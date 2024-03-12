@@ -1,4 +1,4 @@
-import type { FoodCategory, Restaurant } from '../../types';
+import type { FoodCategory } from '../../types';
 import { Header } from '../header/header';
 import { BusinessTypeFilterBar } from '../business-type-filter-bar/business-type-filter-bar';
 import { Footer } from '../footer/footer';
