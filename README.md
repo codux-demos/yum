@@ -1,33 +1,44 @@
-<div align="center">  
-    <img height="50" src="./src/assets/codux.svg">  
-    <h1><img height="30" src="./src/assets/vite.svg"> Vite template for Codux</h1>
-</div>
+# Yum: A Codux Food Delivery Demo
 
-### A Visual IDE for React Projects
+![Discover-crop](https://github.com/codux-demos/yum/assets/6399886/3622c0e7-fecb-4d31-b482-feb76d0113d1)
 
-Codux is an all-in-one visual development environment. Whether you’re starting a new app, creating components, or editing an existing project, every visual change you make reflects instantly in the code and vice versa. To learn more about Codux, visit our website - [https://www.codux.com/](https://www.codux.com/)
+## Overview
 
-This project was bootstrapped with [`Vite`](https://vitejs.dev).
+The Yum project is a demonstration application built with Codux, a visual development environment. It showcases the power of Codux for designers and developers to create real-world web applications. This project simulates a streamlined food delivery service.
 
-It includes a single React component to start your project with, a sample [`codux.config.json`](codux.config.json) with preconfigured keys, a `package.json` file to describe the project's packages and dependencies, and a folder and component structure to put everything neatly in its place.
+## Key Features
 
-- Edit, render and compose apps that make use of **`React`**-based components.
-- Create components with **`TypeScript`**, **`SCSS`** and **`CSS Modules`** support.
-- Visually edit in real-time and in an isolated environment.
+- **Visually Appealing UI** Focuses on intuitive design principles and smooth user experience.
+- **Component-Based Structure** Demonstrates how to build modular, reusable components in Codux.
+- **Best Practices** Emphasizes clean coding, maintainability, and Codux's design-to-code workflow.
 
-### Available Scripts
+## Project Resources
 
-In the project directory, you can run:
+- [YouTube course](https://www.youtube.com/playlist?list=PLjG_hQ-mq7kPKU54Qm7l-3egBj6rgkuFY) - follow along this tutorial to get started with Codux, from installation to component creation and editing.
+- [Figma design](https://www.figma.com/community/file/1349369576870853833/codux-yum) - check out the intended design for Yum.
 
-### `npm run build`
+## Getting Started
 
-Build the application in production mode into a folder named `dist`. This folder can be served using any HTTP server.
+1. **Prerequisites**
 
-### `npm run dev`
+   - Node.js ([https://nodejs.org/](https://nodejs.org/))
+   - Git ([https://git-scm.com/](https://git-scm.com/))
+   - Codux ([https://www.codux.com/](https://www.codux.com/))
 
-Start dev server, aliases: `vite dev`, `vite serve`.\
-Open [http://127.0.0.1:5173/](http://127.0.0.1:5173/) to view it in the browser.
+2. **Fork and clone the repository** - Press the `Fork` button to create a new version of Yum on your personal account for you to work on and edit. Then proceed to clone it locally on your machine (you can do so through the Codux project picker!).
 
-### `npm run preview`
+3. **Open the project in Codux** - Using the Codux project picker, select your newly cloned copy of Yum
 
-Boots up a local static web server that serves the files from dist at [`http://localhost:4173`](http://localhost:4173) . It's an easy way to check if the production build looks OK in your local environment.
+4. **Install dependencies** - Follow the Codux instructions to install all required dependencies for the project.
+
+5. **Happy editing** - You can now start working on the project locally. Happy Coduxing!
+
+## Learn More
+
+- **Codux website** - Visit the Codux website for more information and video guides - [https://www.codux.com/](https://www.codux.com/)
+- **Stay connected with Codux** - and never miss an update
+  - Explore more at Codux Home Page: https://www.codux.com
+  - Join our Discord community: https://discord.gg/uZgavunJYm
+  - Follow us on Twitter: https://www.twitter.com/coduxide
+
+**Disclaimer:** This project is intended for demonstration and learning purposes. It is not designed for production use.
