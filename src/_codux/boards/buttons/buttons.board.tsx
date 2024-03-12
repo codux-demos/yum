@@ -25,10 +25,8 @@ export default createBoard({
             <Button variant="unstyled" disabled onClick={() => alert('Clicked')}>
                 Unstyled (disabled)
             </Button>
-            <LinkButton variant="unstyled" onClick={() => alert('Clicked')}>
-                Link button
-            </LinkButton>
-            <LinkButton variant="unstyled" disabled onClick={() => alert('Clicked')}>
+            <LinkButton onClick={() => alert('Clicked')}>Link button</LinkButton>
+            <LinkButton disabled onClick={() => alert('Clicked')}>
                 Link button (disabled)
             </LinkButton>
         </div>
